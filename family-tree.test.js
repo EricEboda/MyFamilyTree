@@ -15,4 +15,9 @@ describe('Family Tree', function () {
         const mum = familyTree[2]
         expect(mum.name).toEqual('Aneta')
     })
+    
+    test('My mum is one of my parents', function () {
+        const me = familyTree[0]
+        expect(me.parents[0].name).toEqual('Aneta')
+    })
 })
